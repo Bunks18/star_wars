@@ -1,0 +1,55 @@
+ h2, h3{
+    margin:0px;
+}
+
+nav{
+  background-color: #f0bd35;
+}
+
+.row {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.col-3, .col-4, .col-6, .col-12 {
+  float: left;
+  padding-left: 20px;
+  padding-right: 20px;}
+
+.col-3{
+  width: 33%;
+  /*border: 1px solid grey;*/
+  /*text-align: left;*/
+}
+
+
+.row::before,
+.row::after {
+  display: table;
+  content: '';
+}
+
+.row::after {
+  clear: both;
+}
+
+.header{
+  font-weight: bold;
+  /*float: left;
+  align: left;*/
+}
+
+.description{
+  /*float: left;*/
+
+}
+
+.inner{
+  border: 1px grey solid;
+}
+
+@media only screen and (min-width: 640px) {
+  /* 3 columns, 3/12 in % */
+  .col-3 {
+    width: 25%;
+  }
